@@ -27,7 +27,7 @@ require_once __DIR__ . '/includes/object/login/guest_only.php';
     <a href="signup.php">Don't have an account?</a>
     </form>
     <div class="footer">
-        <p>&copy;<?=date('Y')?> - KALIYOII & FLUNCKS</p>
+        <p>&copy;<?=date('Y')?> - ERBITINE7 & FLUNCKS</p>
     </div>
     <script src="assets/js/pwswitch.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>

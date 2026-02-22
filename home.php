@@ -60,7 +60,7 @@ $boards = $stmt->fetchAll(PDO::FETCH_ASSOC);
     </div>
 
     <div class="footer">
-        <p>&copy;<?= date('Y') ?> - KALIYOII & FLUNCKS</p>
+        <p>&copy;<?= date('Y') ?> - ERBITINE7 & FLUNCKS</p>
     </div>
 
     <script src="assets/js/home.js"></script>
