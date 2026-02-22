@@ -20,7 +20,10 @@ SET time_zone = "+00:00";
 --
 -- Dumping database structure for `cork_board`
 --
-CREATE DATABASE IF NOT EXISTS `cork_board` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+
+CREATE DATABASE IF NOT EXISTS `cork_board`
+DEFAULT CHARACTER SET utf8mb4
+COLLATE utf8mb4_unicode_ci;
 USE `cork_board`;
 -- --------------------------------------------------------
 
