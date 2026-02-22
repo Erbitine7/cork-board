@@ -64,7 +64,7 @@ require_once __DIR__ . '/includes/object/login/auth_check.php';
     <a href="includes/object/login/logout.php" class="logout"><ion-icon name="log-out-outline"></ion-icon> Log out</a>
 
     <div class="footer">
-        <p>&copy;<?=date('Y')?> - KALIYOII & FLUNCKS</p>
+        <p>&copy;<?=date('Y')?> - ERBITINE7 & FLUNCKS</p>
     </div>
     <script src="assets/js/home.js"></script>
     <script src="assets/js/pwswitch.js"></script>
