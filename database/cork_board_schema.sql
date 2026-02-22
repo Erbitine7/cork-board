@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Feb 22, 2026 at 05:30 AM
+-- Generation Time: Feb 22, 2026 at 06:53 AM
 -- Server version: 8.4.3
 -- PHP Version: 8.3.16
 
@@ -20,6 +20,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `cork_board`
 --
+CREATE DATABASE IF NOT EXISTS `cork_board` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci;
+USE `cork_board`;
 
 -- --------------------------------------------------------
 
@@ -96,14 +98,14 @@ CREATE TABLE `users` (
 -- (See below for the actual view)
 --
 CREATE TABLE `view_user_notes` (
-`board` varchar(100)
-,`board_create` timestamp
-,`board_id` int
-,`note_create` timestamp
-,`note_id` int
-,`note_update` timestamp
-,`user_id` int
+`user_id` int
 ,`username` varchar(50)
+,`board_id` int
+,`board` varchar(100)
+,`board_create` timestamp
+,`note_id` int
+,`note_create` timestamp
+,`note_update` timestamp
 );
 
 --
