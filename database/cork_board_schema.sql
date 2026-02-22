@@ -38,7 +38,7 @@ CREATE TABLE `boards` (
   `color` varchar(20) DEFAULT '#ffffff',
   `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   `updated_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_unicode_ci;
 
 -- --------------------------------------------------------
 
@@ -49,7 +49,7 @@ CREATE TABLE `boards` (
 CREATE TABLE `notes` (
   `id` int NOT NULL,
   `board_id` int NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_unicode_ci;
 
 -- --------------------------------------------------------
 
@@ -64,7 +64,7 @@ CREATE TABLE `note_content` (
   `pin_color` varchar(20) DEFAULT '#ff2400',
   `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   `updated_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_unicode_ci;
 
 -- --------------------------------------------------------
 
@@ -76,7 +76,7 @@ CREATE TABLE `note_layout` (
   `note_id` int NOT NULL,
   `pos_x` int DEFAULT '0',
   `pos_y` int DEFAULT '0'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_unicode_ci;
 
 -- --------------------------------------------------------
 
@@ -91,7 +91,7 @@ CREATE TABLE `users` (
   `password_hash` varchar(255) NOT NULL,
   `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   `is_admin` tinyint(1) DEFAULT '0'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_unicode_ci;
 
 -- --------------------------------------------------------
 
