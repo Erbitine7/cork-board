@@ -1,7 +1,7 @@
 <?php
 // absolutely first line
 session_start();
-define('BASE_URL', 'http://corkboard.free.nf');
+define('BASE_URL', 'http://localhost/CorkBoard/');
 
 if (empty($_SESSION['user_id'])) {
     header('Location: ' . BASE_URL . 'signin.php');
