@@ -74,7 +74,7 @@ form button {
 
 form.main {
     width: 30rem;
-    min-height: 30rem;
+    min-height: 24rem;
     color: white;
     justify-content: space-between;
 }
