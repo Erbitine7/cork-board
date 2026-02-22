@@ -187,8 +187,9 @@ let topZ = 1;
 
 	// Handle note color changes
 	if (noteColorInput) {
+
 	noteColorInput.addEventListener('input', function() {
-		textarea.style.backgroundColor = this.value;
+		item.style.backgroundColor = this.value;
 	});
 
 	noteColorInput.addEventListener('change', function() {

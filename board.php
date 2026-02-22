@@ -49,7 +49,7 @@ $notes = $stmt->fetchAll(PDO::FETCH_ASSOC);
   <div class="stage" id="stage" style="background-color: <?= htmlspecialchars($board['color'] ?? '#9c7d52') ?>;">
       <?php if (!empty($notes)): ?>
         <?php foreach ($notes as $note): ?>
-      <form spellcheck="false" class="item" data-note-id="<?= (int)$note['note_id'] ?>" style="left:<?= (int)$note['pos_x'] ?>px; top:<?= (int)$note['pos_y'] ?>px">
+      <form spellcheck="false" class="item" data-note-id="<?= (int)$note['note_id'] ?>" style="left:<?= (int)$note['pos_x'] ?>px; top:<?= (int)$note['pos_y'] ?>px; background-color: <?= htmlspecialchars($note['note_color'] ?? '#ffffff') ?>;">
         <div class="menu" id="editNote">
           <div>
             <button class="delete" id="deleteButton"><ion-icon name="trash-outline"></ion-icon></button>
@@ -60,7 +60,7 @@ $notes = $stmt->fetchAll(PDO::FETCH_ASSOC);
           </div>
         </div>
         <button class="pin" style="background-color: <?= htmlspecialchars($note['pin_color'] ?? '#ce3838') ?>;"></button>
-          <textarea name="content" id="editContent" style="background-color: <?= htmlspecialchars($note['note_color'] ?? '#ffffff') ?>;"><?= htmlspecialchars($note['content'] ?? '') ?></textarea>
+          <textarea name="content" id="editContent" ><?= htmlspecialchars($note['content'] ?? '') ?></textarea>
       </form>
         <?php endforeach; ?>
       <?php endif; ?>
